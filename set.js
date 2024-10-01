@@ -12,13 +12,13 @@ const DATABASE_URL = process.env.DATABASE_URL === undefined ? databasePath : pro
 module.exports = {
     session: process.env.SESSION_ID || '',
     PREFIXES: (process.env.PREFIX || '').split(',').map(prefix => prefix.trim()).filter(Boolean),
-    OWNER_NAME: process.env.OWNER_NAME || "France King",
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "254105915061",
+    OWNER_NAME: process.env.OWNER_NAME || "SanDy",
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "919922281834",
     AUTO_READ_STATUS: process.env.AUTO_VIEW_STATUS || "on",
-    AUTOREAD_MESSAGES: process.env.AUTO_READ_MESSAGES || "on",
+    AUTOREAD_MESSAGES: process.env.AUTO_READ_MESSAGES || "off",
     CHATBOT: process.env.CHAT_BOT || "off",
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_SAVE_STATUS || 'off',
-    A_REACT: process.env.AUTO_REACTION || 'on',
+    A_REACT: process.env.AUTO_REACTION || 'off',
     AUTO_BLOCK: process.env.BLOCK_ALL || 'off',
     URL: process.env.BOT_MENU_LINKS || 'https://static.animecorner.me/2023/08/op2.jpg',
     MODE: process.env.BOT_MODE || "private",
@@ -33,8 +33,8 @@ module.exports = {
     ANTICALL: process.env.ANTICALL || 'on',
     DATABASE_URL,
     DATABASE: DATABASE_URL === databasePath
-        ? "postgresql://giftedtech_ke:9BzoUeUQO2owLEsMjz5Vhshva91bxF2X@dpg-crice468ii6s73f1nkt0-a.oregon-postgres.render.com/api_gifted_tech"
-        : "postgresql://giftedtech_ke:9BzoUeUQO2owLEsMjz5Vhshva91bxF2X@dpg-crice468ii6s73f1nkt0-a.oregon-postgres.render.com/api_gifted_tech",
+        ? "postgresql://sandyo0_user:nolTexth3ckUPQF9selq92lWCAagPRjU@dpg-crrai52j1k6c73echadg-a.oregon-postgres.render.com/sandyo0"
+        : "postgresql://sandyo0_user:nolTexth3ckUPQF9selq92lWCAagPRjU@dpg-crrai52j1k6c73echadg-a.oregon-postgres.render.com/sandyo0",
     /* new Sequelize({
         dialect: 'sqlite',
         storage: DATABASE_URL,
